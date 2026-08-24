@@ -1,6 +1,4 @@
-// Reto 1: funciones, parámetros y return
-
-// console.log("JavaScript listo para practicar");
+console.log("Reto 1: funciones, parámetros y return");
 
 function calcularTotal(precio, cantidad) {
 const total = precio * cantidad;
@@ -50,19 +48,7 @@ const resultadoPromedio = promedio(4.0, 3.7, 4.5);
 console.log(resultadoPromedio);
 
 
-// Reto 2: funciones flecha
-
-/*
-function aplicarIva(precio) {
-return precio * 1.19;
-}
-
-const aplicarIva = (precio) => {
-return precio * 1.19;
-};
-
-const aplicarIva = precio => precio * 1.19;
-*/
+console.log("Reto 2: funciones flecha");
 
 const cuadrado = (numero) => {
     return numero * numero;
@@ -81,7 +67,7 @@ const nombreCompleto = (nombre, completo) => {
 console.log(nombreCompleto("Juan", "Fuentes"));
 
 
-// Reto 3: arreglos y objetos
+console.log("Reto 3: arreglos y objetos");
 
 const productos = [
   { id: 1, nombre: 'Mouse', precio: 50000, categoria: 'Perifericos', stock: 5 },
@@ -97,13 +83,16 @@ const productos = [
 ];
 
 
-// Reto 4: forEach()
+console.log("Reto 4: forEach()");
 
 productos.forEach((producto, indice) => {
 console.log(`${indice + 1}. ${producto.nombre} - $${producto.precio} - Stock: ${producto.stock}`);
 });
 
-// Reto 5: map()
+
+
+console.log("Reto 5: map()");
+
 
 const nombres = productos.map(producto => producto.nombre);
 console.log(nombres);
@@ -118,7 +107,8 @@ const resumenProductos = productos.map(producto => producto.nombre + " - $" + pr
 console.log(resumenProductos);
 
 
-// Reto 6: filter() y find()
+console.log("Reto 6: filter() y find()");
+
 
 const mayor_a_100000 = productos.filter(producto => producto.precio > 100000);
 console.log(mayor_a_100000);
@@ -139,7 +129,8 @@ console.log(buscar_Producto(2));
 
 
 
-// Reto 7: some(), every() y reduce()
+console.log("Reto 7: some(), every() y reduce()");
+
 
 const hayAgotados = productos.some(producto => producto.stock === 0);
 console.log(hayAgotados);
@@ -159,8 +150,8 @@ const valorInventario = productos.reduce(
 );
 console.log(valorInventario);
 
+console.log("Reto 8: JavaScript moderno");
 
-// Reto 8: JavaScript moderno
 
 const productoOriginal = productos[0]; 
 
