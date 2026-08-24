@@ -136,3 +136,25 @@ function buscar_Producto(id){
     return productos.find(producto => producto.id === id);
 }
 console.log(buscar_Producto(2));
+
+
+
+// Reto 7: some(), every() y reduce()
+
+const hayAgotados = productos.some(producto => producto.stock === 0);
+console.log(hayAgotados);
+
+const precioMayor = productos.some(producto => producto.precio > 1000000);
+console.log(precioMayor);
+
+const todosPrecioMayor = productos.every(producto => producto.precio > 0);
+console.log(todosPrecioMayor);
+
+const todosStockMayor = productos.every(producto => producto.stock > 0);
+console.log(todosStockMayor);
+
+const valorInventario = productos.reduce(
+(total, producto) => total + producto.precio * producto.stock,
+0
+);
+console.log(valorInventario);
