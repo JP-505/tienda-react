@@ -95,3 +95,10 @@ const productos = [
   { id: 9, nombre: 'Soporte para Monitor', precio: 85000, categoria: 'Mobiliario', stock: 10 },
   { id: 10, nombre: 'Televisor Smart 43"', precio: 1200000, categoria: 'Pantallas', stock: 6 }
 ];
+
+
+// Reto 4: forEach()
+
+productos.forEach((producto, indice) => {
+console.log(`${indice + 1}. ${producto.nombre} - $${producto.precio} - Stock: ${producto.stock}`);
+});
