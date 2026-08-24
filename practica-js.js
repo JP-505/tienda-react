@@ -158,3 +158,18 @@ const valorInventario = productos.reduce(
 0
 );
 console.log(valorInventario);
+
+
+// Reto 8: JavaScript moderno
+
+const productoOriginal = productos[0]; 
+
+const productoModificado = {
+  ...productoOriginal,
+  precio: 62000,
+  stock: 0
+};
+
+const mensaje = `El producto ${productoModificado.nombre} cuesta $${productoModificado.precio} y se encuentra ${productoModificado.stock > 0 ? 'Disponible' : 'Agotado'}.`;
+
+console.log(mensaje);
