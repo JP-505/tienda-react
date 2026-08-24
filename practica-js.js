@@ -1,6 +1,6 @@
 // Reto 1: funciones, parámetros y return
 
-console.log("JavaScript listo para practicar");
+// console.log("JavaScript listo para practicar");
 
 function calcularTotal(precio, cantidad) {
 const total = precio * cantidad;
