@@ -117,3 +117,22 @@ console.log(nombresMayuscula);
 const resumenProductos = productos.map(producto => producto.nombre + " - $" + producto.precio);
 console.log(resumenProductos);
 
+
+// Reto 6: filter() y find()
+
+const mayor_a_100000 = productos.filter(producto => producto.precio > 100000);
+console.log(mayor_a_100000);
+
+const entre_50k_y_200k = productos.filter(producto => producto.precio > 50000 && producto.precio < 200000);
+console.log(entre_50k_y_200k);
+
+const categoria_1 = productos.filter(producto => producto.categoria === 'Monitores');
+console.log(categoria_1);
+
+const buscar = productos.find(producto => producto.id === 5);
+console.log(buscar);
+
+function buscar_Producto(id){
+    return productos.find(producto => producto.id === id);
+}
+console.log(buscar_Producto(2));
