@@ -50,6 +50,33 @@ const resultadoPromedio = promedio(4.0, 3.7, 4.5);
 console.log(resultadoPromedio);
 
 
+// Reto 2: funciones flecha
+
+/*
 function aplicarIva(precio) {
 return precio * 1.19;
 }
+
+const aplicarIva = (precio) => {
+return precio * 1.19;
+};
+
+const aplicarIva = precio => precio * 1.19;
+*/
+
+const cuadrado = (numero) => {
+    return numero * numero;
+}
+console.log(cuadrado(5));
+
+
+const esMayorEdad = (edad) => {
+    return edad >= 18;
+}
+console.log(esMayorEdad(17));
+
+const nombreCompleto = (nombre, completo) => {
+    return nombre + " " + completo;
+}
+console.log(nombreCompleto("Juan", "Fuentes"));
+
